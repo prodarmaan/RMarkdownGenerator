@@ -21,7 +21,8 @@ function generateRMarkdown() {
                         "## Include the command to load the data here!!!!\n" +
                         "```\n" +
                         "\n" +
-                        "* * *\n";
+                        "* * *\n" +
+                        "\n";
 
   // Add questions based on the provided exercise and page numbers
   for (var i = 1; i <= numQuestions; i++) {

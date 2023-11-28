@@ -1,27 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>RMarkdown Generator</title>
-  </head>
-  <body>
-      <label for="name">Your Name:</label>
-      <input type="text" id="name"><br>
 
-      <label for="assignmentNumber">Homework Assignment Number:</label>
-      <input type="number" id="assignmentNumber"><br>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>RMarkdown Generator</title>
+</head>
 
-      <label for="numQuestions">Number of Questions:</label>
-      <input type="number" id="numQuestions"><br>
+<body>
+  <h1>RMarkdown Generator</h1>
 
-      <label for="outputFileName">Output File Name:</label>
-      <input type="text" id="outputFileName"><br>
+  <p>Use the input fields below to generate a RMarkdown template for your homework.</p>
+  
+  <div class="input">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name"><br>
+  </div>
 
-      <div id="questions"></div>
+  <div class="input">
+    <label for="assignmentNumber">Homework Assignment Number:</label>
+    <input type="number" id="assignmentNumber"><br>
+  </div>
 
-      <button onclick="generateRMarkdown()">Generate RMarkdown</button>
+  <div class="input">
+    <label for="numQuestions">Number of Questions:</label>
+    <input type="number" id="numQuestions"><br>
+  </div>
 
-      <script src="js/script.js"></script>
-  </body>
+  <div class="input">
+    <label for="outputFileName">Output File Name:</label>
+    <input type="text" id="outputFileName"><br>
+  </div>
+
+  <div id="questions"></div>
+
+  <button id="button" onclick="generateRMarkdown()">Generate RMarkdown</button>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>
