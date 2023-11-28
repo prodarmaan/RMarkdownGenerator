@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>RMarkdown Generator</title>
+  </head>
+  <body>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name"><br>
+
+      <label for="assignmentNumber">Homework Assignment Number:</label>
+      <input type="number" id="assignmentNumber"><br>
+
+      <label for="numQuestions">Number of Questions:</label>
+      <input type="number" id="numQuestions"><br>
+
+      <label for="outputFileName">Output File Name:</label>
+      <input type="text" id="outputFileName"><br>
+
+      <div id="questions"></div>
+
+      <button onclick="generateRMarkdown()">Generate RMarkdown</button>
+
+      <script src="js/script.js"></script>
+  </body>
+</html>
