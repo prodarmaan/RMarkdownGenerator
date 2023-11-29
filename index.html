@@ -9,33 +9,46 @@
 </head>
 
 <body>
-  <h1>RMarkdown Generator</h1>
 
-  <p>Use the input fields below to generate a RMarkdown template for your homework.</p>
-  
-  <div class="input">
-    <label for="name">Your Name:</label>
-    <input type="text" id="name"><br>
+  <!-- <video autoplay loop id="videoBG">
+    <source src="assets/bgvid.mp4" type="video/mp4">
+  </video> -->
+
+  <div id="header">
+    <h1>RMarkdown Generator</h1>
+
+    <div id="modeSwitch">
+      <a href="prince.html">Prince Mode</a>
+    </div>
+
+    <p>Use the input fields below to generate a RMarkdown template for your homework.</p>
   </div>
 
-  <div class="input">
-    <label for="assignmentNumber">Homework Assignment Number:</label>
-    <input type="number" id="assignmentNumber"><br>
-  </div>
+  <div id="form">
+    <div class="input">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name"><br>
+    </div>
 
-  <div class="input">
-    <label for="numQuestions">Number of Questions:</label>
-    <input type="number" id="numQuestions"><br>
-  </div>
+    <div class="input">
+      <label for="assignmentNumber">Homework Assignment Number:</label>
+      <input type="number" id="assignmentNumber"><br>
+    </div>
 
-  <div class="input">
-    <label for="outputFileName">Output File Name:</label>
-    <input type="text" id="outputFileName"><br>
-  </div>
+    <div class="input">
+      <label for="numQuestions">Number of Questions:</label>
+      <input type="number" id="numQuestions"><br>
+    </div>
 
-  <div id="questions"></div>
+    <div class="input">
+      <label for="outputFileName">Output File Name:</label>
+      <input type="text" id="outputFileName"><br>
+    </div>
 
-  <button id="button" onclick="generateRMarkdown()">Generate RMarkdown</button>
+    <div id="questions"></div>
+
+    <button id="button" onclick="generateRMarkdown()">Generate RMarkdown</button>
+  </div id="form">
 
   <script src="js/script.js"></script>
 </body>
